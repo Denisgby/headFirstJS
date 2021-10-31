@@ -21,6 +21,13 @@ for (var i = 0; i < scores.length; i++){
 	}
 
 }
+var bestSolutions = [];
+for (var i =0; i < scores.length; i++){
+	if (highScore==scores[i]){
+		bestSolutions.push(i)
+	}
+}
+console.log('bestavg; '+bestSolutions)
 console.log('Bubbles test: '+ scores.length);
 console.log('Highest bubble score: ' + highScore)
 
