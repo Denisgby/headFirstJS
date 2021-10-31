@@ -12,13 +12,17 @@ var scores = [60, 50, 60, 58, 54, 54,
               41, 53, 55, 61, 51, 44];
 
 var output;
-
+var highScore = 0;
 for (var i = 0; i < scores.length; i++){
 	output = 'Bubble solution #'+i+' score: ' + scores[i];
-	console.log(output)
+	console.log(output);
+	if (scores[i]>highScore){
+		highScore= scores[i];
+	}
 
 }
-
+console.log('Bubbles test: '+ scores.length);
+console.log('Highest bubble score: ' + highScore)
 
 </script>
 </head>
