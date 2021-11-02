@@ -14,10 +14,14 @@
             convertible: false,
             mileage: 1021
         }
-        chevy.year=20000
-        chevy.needHelp= true
-        var z = chevy.year
-        alert(z)
-        console.log(chevy.needHelp)
+
+        function proverka(chevy) {
+            if (chevy.year < 1950) {
+                return false;
+            } else if (chevy.mileage > 2000) {
+                return false;
+            } return true;
+        }
+        
     </script>
 </head>
